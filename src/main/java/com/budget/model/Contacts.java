@@ -5,31 +5,44 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
-public class Contact {
+public class Contacts {
     private @Id
     @GeneratedValue Long id;
 
     private String name;
 
-    private  String phone;
+    private String phone;
 
-    public Contact() {
+    public Contacts() {
 
     }
-    public Contact(String name, String phone){
+
+    public Contacts(String name, String phone) {
         this.name = name;
         this.phone = phone;
     }
 
-    public  Long getId() {return id;}
+    public Long getId() {
+        return id;
+    }
 
-    public void setId(Long id) {this.id = id;}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public String getName() {return  name;}
+    public String getName() {
+        return name;
+    }
 
-    public  void setName(String name) {this.name = name;}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getPhone() {return  phone;}
+    public String getPhone() {
+        return phone;
+    }
 
-    public  void setPhone(String phone) {this.phone = phone;}
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }

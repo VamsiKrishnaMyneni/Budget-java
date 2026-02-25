@@ -1,4 +1,8 @@
 package com.budget.repository;
 
-public interface ContactsRepository {
+import com.budget.model.Contacts;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ContactsRepository extends JpaRepository<Contacts, Long> {
+
 }
