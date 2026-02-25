@@ -1,4 +1,4 @@
-package com.budget.dao;
+package com.budget.repository;
 
 public class BudgetRepository {
 

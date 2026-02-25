@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class BudgetController {
+public class ContactsController {
 
-    @RequestMapping("/greet")
-    public String greet(){
-        return "welcome to java world, mr, vamsi krishna myneni";
+    @RequestMapping("")
+    public String getContacts() {
+return "vamsi krishna";
     }
 
 }
