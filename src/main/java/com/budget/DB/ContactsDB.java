@@ -1,5 +1,6 @@
 package com.budget.DB;
 
+import com.budget.model.Contacts;
 import com.budget.repository.ContactsRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -12,8 +13,8 @@ public class ContactsDB {
     CommandLineRunner initDatabase(ContactsRepository repository) {
 
         return args -> {
-            System.out.println("Preloading" + repository.save("John Smith", "123.456.7890"));
-            System.out.println("Preloading" + repository.save("John Deo", "123.456.7890"));
+            System.out.println("Preloading" + repository.save(new Contacts("John Smith", "123.456.7890")));
+            System.out.println("Preloading" + repository.save(new Contacts("John Deo", "123.456.7890")));
         };
     }
 }
